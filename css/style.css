@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+:root {
+  --primary-color: #0000ff;
+  --danger-color: #ff0000;
+  --success-color: #008000;
+  --warning-color: #ffff00;
+  --dark-color: black;
+  --white-color: white;
+  --secondary-color: gray;
+}
+
+:root {
+  --z-index-modal: 100;
+}
+
+body {
+  font-family: "DotGothic16", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--dark-color);
+  font-size: 16px;
+}
+
+.top_container,
+.game_container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* top */
+
+.top_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .top_input {
+    width: 240px;
+    height: 60px;
+  }
+}
+
+.top_btn-wrapper {
+  color: var(--white-color);
+  background-color: var(--dark-color);
+  border: 4px solid var(--dark-color);
+}
+
+.top_btn-wrapper:hover {
+  color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+/* game */
+
+.game_simon-btn {
+  width: 100%;
+  height: 100%;
+}
+
+.game_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game_simon-btn_list {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.game_simon-btn_item {
+  width: 100%;
+}
+
+.game_simon-btn-wrapper {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (min-width: 768px) {
+  .game_simon-btn-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.game_simon-btn-wrapper:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.game_restart-btn-wrapper:hover {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+
+/* game-over */
+
+.game-over_about-wrapper {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .game-over_about-wrapper {
+    flex-direction: row;
+  }
+}
+
+.game_restart-btn-wrapper {
+  width: 200px;
+  height: 60px;
+}
+
+.game-over_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: var(--z-index-modal);
+}
+
+.game-over_img-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
