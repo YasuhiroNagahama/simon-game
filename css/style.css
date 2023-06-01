@@ -84,8 +84,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .game_simon-btn-wrapper {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
   }
 }
 

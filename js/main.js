@@ -195,11 +195,18 @@ class Animation {
 
     for (let i = 0; i < simonBtns.length; i++) {
       simonBtns[i].addEventListener("mousedown", function () {
-        if (!Game.notClickable) simonBtns[i].style.opacity = 0.3;
+        if (!Game.notClickable) {
+          simonBtns[i].style.opacity = 0.3;
+          const color = simonBtns[i].getAttribute("data-color");
+          const audio = new Audio(Sound.getSimonSounds(color));
+          audio.play();
+        }
       });
 
       simonBtns[i].addEventListener("mouseup", function () {
-        if (!Game.notClickable) simonBtns[i].style.opacity = null;
+        if (!Game.notClickable) {
+          simonBtns[i].style.opacity = null;
+        }
       });
     }
   }
