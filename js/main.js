@@ -238,10 +238,20 @@ class Game {
   static isAITurn = true;
 
   static changeScreen(removeScreen, addScreen) {
-    removeScreen.classList.remove("d-block");
+    removeScreen.classList.remove(
+      "d-flex",
+      "flex-column",
+      "justify-content-center",
+      "align-items-center"
+    );
     removeScreen.classList.add("d-none");
 
-    addScreen.classList.add("d-block");
+    addScreen.classList.add(
+      "d-flex",
+      "flex-column",
+      "justify-content-center",
+      "align-items-center"
+    );
     addScreen.classList.remove("d-none");
   }
 
