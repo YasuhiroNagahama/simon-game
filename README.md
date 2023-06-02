@@ -7,6 +7,7 @@ Simon Game
 # Explain
 
 シンプルな　Simon Game　です。
+javaでランキング機能をつける予定です
 
 # Demo
 
