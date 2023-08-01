@@ -4,7 +4,7 @@ Simon Game
 
 # URL
 
-https://yasuhironagahama.github.io/Project-Simon/
+https://yasuhironagahama.github.io/simon-game/
 
 # Explain
 
